@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+
+{% block content %}
+
+ <form method="POST" class="custom-form">
+        <label for="name"> Enter Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter name pizza"><br>
+
+        <label for="ingredients"> Enter ingredients:</label>
+        <input type="text" name="ingredients" id="ingredients" placeholder="Enter ingredients a pizza"><br>
+
+        <label for="price"> Enter price:</label>
+        <input type="text" name="price" id="price" placeholder="Enter price a pizza"><br>
+
+        <input type = "submit" value = "submit"/><br/>
+
+ </form>
+<br>
+
+{% endblock %}

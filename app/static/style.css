@@ -1,0 +1,92 @@
+#header {
+    text-align: center;
+    margin-button 20px;
+}
+
+#header img {
+    width: 300px;
+    height:auto;
+    border-radius: 10px;
+}
+
+/* Основные стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Стили для заголовков таблицы */
+thead th {
+    background-color: #009879;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Стили для ячеек таблицы */
+tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Выравнивание текста в ячейках */
+td {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Стили для заголовков таблицы */
+menu th {
+    background-color: #009879;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Стили для ячеек таблицы */
+menu td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #00408d;
+    transform: scale(1.02);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}

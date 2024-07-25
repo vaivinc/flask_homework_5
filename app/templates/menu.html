@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<div id="menu">
+    {% if pizzas %}
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>ingredients</th>
+            <th>price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for pizza in pizzas %}
+        <tr>
+
+            <td>{{ pizza ["id"] }}</td>
+            <td>{{ pizza["name"] }}</td>
+            <td>{{ pizza['ingredients'] }}</td>
+            <td>{{ pizza['price'] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+    {% else %}
+    <p>Нікого немає</p>
+    {% endif %}
+    <ul>
+        <li>
+            <a href="http://localhost:5050/" class="button">Домашня сторінка</a>
+        </li>
+    </ul>
+
+    </div>
+<div>
+    <button class="btn" type="button" onclick="window.location.href='{{url_for('add_pizza')}}';">
+        Додати піццу!
+    </button>
+</div>
+</html>
