@@ -1,12 +1,7 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
+{% block content %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
-</head>
 <div id="menu">
     {% if pizzas %}
     <table>
@@ -35,11 +30,6 @@
     {% else %}
     <p>Нікого немає</p>
     {% endif %}
-    <ul>
-        <li>
-            <a href="http://localhost:5050/" class="button">Домашня сторінка</a>
-        </li>
-    </ul>
 
     </div>
 <div>
@@ -47,4 +37,4 @@
         Додати піццу!
     </button>
 </div>
-</html>
+{% endblock %}

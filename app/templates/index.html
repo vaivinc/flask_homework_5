@@ -1,25 +1,7 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 
-<html lang="en">
+{% block content %}
+    <h1>{% block title %} Welcome to PizzaWow {% endblock %}</h1>
+    <img src="/static/pizza.jpg" height="250" width="400">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>{{title}}</title>
-        <link rel="stylesheet" type="text/css" href="/static/style.css">
-        <link rel="stylesheet" type="text/css" href="/static/form.css">
-    </head>
-        <body>
-
-    {% block content %}
-        <div id='header'>
-            <ul>
-                <h1>{{title}}</h1>
-                <img src="/static/pizza.jpg" width="250" height="250">
-                <li>
-                    <a href="http://localhost:5050/menu/" class="button">Меню</a>
-                </li>
-            </ul>
-        </div>
-    {% endblock %}
-    </body>
-</html>
+{% endblock %}
